@@ -38,7 +38,7 @@ const App = () => {
             setRoomName("");
           }}
         >
-          Join Room
+          Join My Room
         </button>
       </div>
       <input
