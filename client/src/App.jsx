@@ -1,8 +1,9 @@
 import { io } from "socket.io-client";
 import { useEffect, useMemo, useState } from "react";
+const url = import.meta.env.VITE_BACKEND_URL;
 
 const App = () => {
-  const socket = useMemo(() => io("http://localhost:3000"), []);
+  const socket = useMemo(() => io(url), []);
 
   const [room, setRoom] = useState("");
   const [roomName, setRoomName] = useState("");
