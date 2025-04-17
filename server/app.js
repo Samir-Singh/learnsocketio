@@ -6,6 +6,8 @@ dotenv.config();
 const url = process.env.FRONTEND_URL;
 const port = 3000;
 
+console.log(url, "ddfdfsds");
+
 const app = express();
 const server = createServer(app);
 

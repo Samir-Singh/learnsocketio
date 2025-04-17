@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 const url = import.meta.env.VITE_BACKEND_URL;
 
 const App = () => {
+  console.log(url, "ddfdfsds");
   const socket = useMemo(() => io(url), []);
 
   const [room, setRoom] = useState("");
